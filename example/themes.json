@@ -1,0 +1,52 @@
+[
+    {
+        "name": "light",
+        "colors": [
+            {
+                "name": "--text-color",
+                "value": "#040316"
+            },
+            {
+                "name": "--background-color",
+                "value": "#fbfbfe"
+            },
+            {
+                "name": "--primary-color",
+                "value": "#2f27ce"
+            },
+            {
+                "name": "--secondary-color",
+                "value": "#dddbff"
+            },
+            {
+                "name": "--accent-color",
+                "value": "#443dff"
+            }
+        ]
+    },
+    {
+        "name": "dark",
+        "colors": [
+            {
+                "name": "--text-color",
+                "value": "#eae9fc"
+            },
+            {
+                "name": "--background-color",
+                "value": "#010104"
+            },
+            {
+                "name": "--primary-color",
+                "value": "#3a31d8"
+            },
+            {
+                "name": "--secondary-color",
+                "value": "#020024"
+            },
+            {
+                "name": "--accent-color",
+                "value": "#0600c2"
+            }
+        ]
+    }
+]

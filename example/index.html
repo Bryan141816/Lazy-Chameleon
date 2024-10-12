@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Lazy Chameleon Example</title>
+</head>
+<body>
+    <h1 class="text">Hello world</h1>
+    <div class="primary"></div>
+    <div class="secondary"></div>
+    <div class="accent"></div>
+    <button id="change-theme">Change Theme</button>
+    <script src="lazychameleon.js"></script>
+    <script>
+        const lazychameleon = new LazyChameleon('testing', 'themes.json');
+
+        document.getElementById("change-theme").addEventListener("click", () => {
+            const currentTheme = lazychameleon.getStoredTheme();
+            const newTheme = currentTheme === "light" ? "dark" : "light";
+            lazychameleon.setTheme(newTheme);
+            lazychameleon.sendChangeThemeEvent(newTheme);
+        });
+        
+    </script>
+</body>
+</html>

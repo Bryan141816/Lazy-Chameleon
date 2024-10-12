@@ -1,0 +1,43 @@
+:root {
+    --text-color: #040316;
+    --background-color: #fbfbfe;
+    --primary-color: #2f27ce;
+    --secondary-color: #dddbff;
+    --accent-color: #443dff;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100dvh;
+    width: 100%;
+    background-color: var(--background-color);
+}
+
+.text{
+    color: var(--text-color);
+}
+
+div{
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+}
+.primary{
+    background-color: var(--primary-color);
+}
+.secondary{
+    background-color: var(--secondary-color);
+}
+.accent{
+    background-color: var(--accent-color);
+}
+
+#change-theme{
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border: none;
+    height: 70px;
+    width: 100px;
+    border-radius: 10px;
+}
